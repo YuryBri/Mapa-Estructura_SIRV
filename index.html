@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Conceptual de Estructura SIRV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1>Estructura de Carpetas <span>SIRV</span></h1>
+                <p>Guía interactiva para la subida de material</p>
+                <div class="important-tip">
+                    <i class="fas fa-info-circle"></i>
+                    <span><strong>consejo importante:</strong> todos los nombres de archivos y carpetas deben estar en minúsculas, sin espacios ni acentos, utilizando guiones medios para separar palabras.</span>
+                </div>
+                
+                <details class="nomenclature-details">
+                    <summary><i class="fas fa-book"></i> guía de nomenclatura de categorías (códigos abreviados)</summary>
+                    <div class="nomenclature-grid">
+                        <div class="nom-item"><span class="nom-name">celulares</span><span class="nom-code">cel</span></div>
+                        <div class="nom-item"><span class="nom-name">computadores</span><span class="nom-code">comp</span></div>
+                        <div class="nom-item"><span class="nom-name">grandes electrodomésticos</span><span class="nom-code">gelec</span></div>
+                        <div class="nom-item"><span class="nom-name">pequeños electrodomésticos</span><span class="nom-code">pelec</span></div>
+                        <div class="nom-item"><span class="nom-name">tv</span><span class="nom-code">tv</span></div>
+                        <div class="nom-item"><span class="nom-name">accesorios</span><span class="nom-code">acce</span></div>
+                        <div class="nom-item"><span class="nom-name">videojuegos</span><span class="nom-code">viju</span></div>
+                        <div class="nom-item"><span class="nom-name">audio</span><span class="nom-code">aud</span></div>
+                        <div class="nom-item"><span class="nom-name">cámaras</span><span class="nom-code">cam</span></div>
+                        <div class="nom-item"><span class="nom-name">pines</span><span class="nom-code">pin</span></div>
+                        <div class="nom-item"><span class="nom-name">hogar</span><span class="nom-code">hog</span></div>
+                        <div class="nom-item"><span class="nom-name">casa inteligente</span><span class="nom-code">cain</span></div>
+                        <div class="nom-item"><span class="nom-name">deportes</span><span class="nom-code">dep</span></div>
+                        <div class="nom-item"><span class="nom-name">llantas y motos</span><span class="nom-code">llamot</span></div>
+                        <div class="nom-item"><span class="nom-name">juguetes</span><span class="nom-code">jug</span></div>
+                        <div class="nom-item"><span class="nom-name">home</span><span class="nom-code">home</span></div>
+                        <div class="nom-item"><span class="nom-name">cocina</span><span class="nom-code">coci</span></div>
+                        <div class="nom-item"><span class="nom-name">refrigeración</span><span class="nom-code">refri</span></div>
+                        <div class="nom-item"><span class="nom-name">lavado</span><span class="nom-code">lava</span></div>
+                        <div class="nom-item"><span class="nom-name">smartwatch</span><span class="nom-code">swatch</span></div>
+                        <div class="nom-item"><span class="nom-name">audífonos</span><span class="nom-code">aufo</span></div>
+                        <div class="nom-item"><span class="nom-name">mercado</span><span class="nom-code">mer</span></div>
+                    </div>
+                </details>
+            </div>
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar carpeta...">
+            </div>
+            <div class="controls">
+                <button id="btnExpandAll" class="btn btn-primary"><i class="fas fa-expand-arrows-alt"></i> Expandir Todo</button>
+                <button id="btnCollapseAll" class="btn btn-secondary"><i class="fas fa-compress-arrows-alt"></i> Contraer Todo</button>
+            </div>
+        </header>
+
+        <main class="tree-container">
+            <div id="folder-tree" class="tree">
+                <!-- El árbol se renderizará aquí dinámicamente usando JavaScript -->
+            </div>
+        </main>
+        
+        <div id="noResults" class="no-results hidden">
+            <i class="fas fa-folder-open"></i>
+            <p>No se encontraron carpetas con ese nombre.</p>
+        </div>
+    </div>
+
+    <!-- Referencia al script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
